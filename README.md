@@ -18,3 +18,29 @@ Exploration Summary:
 - Missing values: 0
 - Duplicate rows: 0
 - Unique countries: 209
+
+## Data Cleaning ##
+
+The raw dataset was cleaned and standardized before loading it into the database.
+
+The following tasks were completed:
+- Rename columns to use clear and consistent names.
+- Standardized categorical value:
+   - `men` - `Men``
+   - `women` - `Women`
+   - `Immigrations` - `Immigration`
+   - `Emigrations` - `Emigration`
+- Removed aggregated rows where the country was `total`
+- Removed rows with `unknown country of birth`
+- Verified data types
+- Saved the clean dataset `data/processed/cleaned_immigration.csv`
+
+# Cleaning Summary
+- Rows:
+    Before: 20,900
+    After: 20,700
+- Countries:
+    Before: 209
+    After: 207
+- Missng values: 0
+- Dublicate Rows: 0
